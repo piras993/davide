@@ -1,6 +1,6 @@
 
 <?php
-class Model { //Connessione OK
+class Model {
             
        public function insert_brano($titolo, $autore, $id){
         
