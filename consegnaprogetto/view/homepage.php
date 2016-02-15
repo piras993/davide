@@ -18,7 +18,7 @@
                             <li><a href="view/contatti.php">CONTATTI</a></li>
                             <li><a href="view/discografia.php">DISCOGRAFIA</a></li>
                             <li><a href="view/paese.php">IL PAESE</a></li>
-                            <li><a href="view/descrizionesito.php">DESCRIZIONE SITO</a></li>
+                            <li><a href="view/descrizionesito.php">DESCRIZIONE</a></li>
                             <li class="active"><a href="../index.php">HOME</a></li>
                         </ul>
                     </div>

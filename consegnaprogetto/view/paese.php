@@ -4,8 +4,7 @@
         <title>Associazione Sas Enas</title>
         <meta name="keywords" content="Associazione Sas Enas">
         <meta name="description" content="Una pagina dell'associazione Sas'Enas di Bortigali">
-        <link href="../stile/CSS_home.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="../stile/CSS_pagina.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../stile/pagina.css" rel="stylesheet" type="text/css" media="screen">
         <script type="text/javascript" src="../scripts/slides.js"></script>
         <link href='../stile/slideshow.css' rel="stylesheet"  type="text/css" />
     </head>
@@ -20,7 +19,7 @@
                             <li><a href="contatti.php">CONTATTI</a></li>
                             <li><a href="discografia.php">DISCOGRAFIA</a></li>
                             <li class="active"><a href="paese.php">IL PAESE</a></li>
-                            <li><a href="descrizionesito.php">DESCRIZIONE SITO</a></li>
+                            <li><a href="descrizionesito.php">DESCRIZIONE</a></li>
                             <li><a href="../index.php">HOME</a></li>
                         </ul>
                     </div>

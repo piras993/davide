@@ -11,8 +11,7 @@
         <title>Associazione Sas Enas</title>
         <meta name="keywords" content="Associazione Sas Enas">
         <meta name="description" content="Una pagina dell'associazione Sas'Enas di Bortigali">
-        <link href="../stile/CSS_home.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="../stile/CSS_pagina.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../stile/pagina.css" rel="stylesheet" type="text/css" media="screen">
         <script>
 <!--
 function Modulo() {

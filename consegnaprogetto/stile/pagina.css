@@ -186,6 +186,8 @@ ul#menu li a:hover{
 }
 #page{
     background-image: -moz-linear-gradient(bottom, #EEE0E5 0%, white 100%);
+    background-image: -webkit-gradient(bottom, #EEE0E5 0%, white 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEE0E5 0%, white 100%);
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
