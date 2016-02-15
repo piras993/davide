@@ -132,6 +132,7 @@ float: left;
 
 #content{
 background-image: url(sfondo.jpg);
+background-repeat: no-repeat;
   float: right;
   padding:9px;
   margin-left: -13px;
