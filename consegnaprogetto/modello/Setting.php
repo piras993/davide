@@ -8,6 +8,6 @@ class Setting {
     public static $db_host="localhost";
     public static $db_user="pirasDavide";
     public static $db_psw="lontra4283";
-    public static $db_name="negozio";
+    public static $db_name="amm2015_pirasDavide";
     
 }
