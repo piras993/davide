@@ -1,7 +1,7 @@
 
 #sidebar {
   width: 22%;
-  height: 660px;
+  
   }
   
 
@@ -11,7 +11,7 @@
 
 #content{
   width: 75%;
-  height: 652px;
+  
 } 
 .destra {
     float:left;
