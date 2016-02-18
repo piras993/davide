@@ -57,6 +57,7 @@
                 <li>PHP Mysql</li>
                 <li>pattern MVC</li>
                 <li>due ruoli: utente e admin</li>
+                <li>transazione nel salvataggio dell'ordine</li>
                 <li> Javascript</li>
                 Dalla barra superiore posso visualizzare varie pagine descrittive, nella pagina "paese" è presente uno slideshow 
                 di immagini effettuato tramite javascript.<br>

@@ -2,12 +2,12 @@
 
 
 session_start();
-if($_SESSION['user']!='admin'){
+if($_SESSION['user']!='utente'){
     header("Location:login.php");
     
 }
 else {
-    $_SESSION['user']='admin';
+    $_SESSION['user']='utente';
 }
 ?>
 <html>
@@ -17,26 +17,6 @@ else {
         <meta name="keywords" content="Associazione Sas Enas">
         <meta name="description" content="Una pagina dell'associazione Sas'Enas di Bortigali">
         <link href="../stile/pagina.css" rel="stylesheet" type="text/css" media="screen">
-        <script>
-        <!--
-function Modulo() {
-    
-    var nome = document.modulo.nome.value;
-    
-    
-    if ((nome == "") || (nome == "undefined")) {
-        alert("Devi inserire il nome dell'artista.");
-        document.modulo.nome.focus();
-        return false;
-    }
-    
-    else {
-        document.modulo.action = "../controllo/dirverter_autore.php";
-        document.modulo.submit();
-    }
-}
-//-->
-</script>
     </head>
     <body>
         <div id='page'>
@@ -55,8 +35,8 @@ function Modulo() {
             <div id="pagina">
             <div id='sidebar'>
                 <div id='alto'>
-                    <a  href="javascript:history.go(-1)"><button id='log'>
-                        Torna indietro
+                    <a  href="../view/pre_utente.php"><button id='log'>
+                        Logout e torma alla HOME
                         </button></a><br/>
                     
                     <div class='comune'>
@@ -80,13 +60,8 @@ function Modulo() {
             </div>
         
             <div id='content'>
-                <h5> Inserisci il nome del nuovo artista<br> <br></h5>
-                <div id="form" align="center">
-                <form method="post" name="modulo">
-                    <p>Nome</p> <input type="text" name="nome"> <br><br><br>
-                    <input id="log" type="button" value="INSERISCI" onClick="Modulo()">   
-                </form>
-                </div>
+                <h3>INSERIMENTO AVVENUTO CON SUCCESSO!</h3>
+                <a href="javascript:history.go(-1)">FAI UN ALTRO INSERIMENTO!</a>
             </div>
             </div>
             <div style="clear: both; width: 0px; height: 0px;"></div>

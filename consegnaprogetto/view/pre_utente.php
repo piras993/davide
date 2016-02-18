@@ -2,12 +2,12 @@
 
 
 session_start();
-if($_SESSION['user']!='admin'){
+if($_SESSION['user']!='utente'){
     header("Location:login.php");
     
 }
 else {
-    $_SESSION['user']='admin';
+    $_SESSION['user']='utente';
 }
 ?>
 <html>
@@ -17,26 +17,6 @@ else {
         <meta name="keywords" content="Associazione Sas Enas">
         <meta name="description" content="Una pagina dell'associazione Sas'Enas di Bortigali">
         <link href="../stile/pagina.css" rel="stylesheet" type="text/css" media="screen">
-        <script>
-        <!--
-function Modulo() {
-    
-    var nome = document.modulo.nome.value;
-    
-    
-    if ((nome == "") || (nome == "undefined")) {
-        alert("Devi inserire il nome dell'artista.");
-        document.modulo.nome.focus();
-        return false;
-    }
-    
-    else {
-        document.modulo.action = "../controllo/dirverter_autore.php";
-        document.modulo.submit();
-    }
-}
-//-->
-</script>
     </head>
     <body>
         <div id='page'>
@@ -55,10 +35,8 @@ function Modulo() {
             <div id="pagina">
             <div id='sidebar'>
                 <div id='alto'>
-                    <a  href="javascript:history.go(-1)"><button id='log'>
-                        Torna indietro
-                        </button></a><br/>
-                    
+                    <a href="../view/initlogin.php?op=logout"><button id='log'>Logout</button></a><br/>
+                
                     <div class='comune'>
                         <a  href="http://www.comune.bortigali.nu.it/">
                                 <img title='paesaggio' alt='Paesaggio' src='../immagini/comune.jpg'><br/>
@@ -80,13 +58,15 @@ function Modulo() {
             </div>
         
             <div id='content'>
-                <h5> Inserisci il nome del nuovo artista<br> <br></h5>
-                <div id="form" align="center">
-                <form method="post" name="modulo">
-                    <p>Nome</p> <input type="text" name="nome"> <br><br><br>
-                    <input id="log" type="button" value="INSERISCI" onClick="Modulo()">   
+                <h4>Ciao utente, questa è la tua pagina</h4>
+                <div align="center" id="form">
+                <form action='../controllo/choose.php' method='post'>
+                    <input type="radio" name="insert" value=0> Guarda quali sono i nostri gruppi e i nostri brani<br>
+                    <input type="radio" name="insert" value=1> Ordina una delle nostre produzioni<br>
+                    
+                    <input id="log" type="submit" value="Invia">
                 </form>
-                </div>
+                    </div>
             </div>
             </div>
             <div style="clear: both; width: 0px; height: 0px;"></div>
@@ -101,3 +81,5 @@ function Modulo() {
     </body>
 </html>
 
+<?php var_dump($_SESSION);
+?>

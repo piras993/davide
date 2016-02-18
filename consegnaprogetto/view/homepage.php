@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -28,9 +29,10 @@
             <div id="pagina">
             <div id='sidebar'>
                 <div id='alto'>
+                    
                     <a  href="view/initlogin.php"><button id='log'>
                         LOGIN
-                        </button></a>
+                    </button></a>
                     <br/>
                     <div class='comune'>
                         <a  href="http://www.comune.bortigali.nu.it/">

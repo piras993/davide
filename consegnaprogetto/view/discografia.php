@@ -51,7 +51,7 @@
             <div id='content'>
                 <h3>DISCOGRAFIA</h3>
                 <p>
-                    <a id="first2">A</a>l momento l'unico lavoro pubbliccato della nostra associazione con la partecipazione 
+                    <a id="first2">A</a>l momento l'unico lavoro pubblicato della nostra associazione con la partecipazione 
                     di Ignazio Macchiarella e Sebastiano Pilosu è:<br>
                     <b>BORTIGALI: un paese e le sue pratiche musicali</b><br><br>
                     <img src="../immagini/libro.jpg"/><br><br>

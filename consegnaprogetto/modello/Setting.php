@@ -9,5 +9,8 @@ class Setting {
     public static $db_user="pirasDavide";
     public static $db_psw="lontra4283";
     public static $db_name="amm15_pirasDavide";
+    //public static $db_user="root";
+    //public static $db_psw="davide";
+    //public static $db_name="negozio";
     
 }

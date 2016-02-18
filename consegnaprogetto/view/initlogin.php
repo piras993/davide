@@ -1,7 +1,7 @@
 <?php
 
 require_once ('../controllo/UserController.php');
-require_once ('../modello/Umodel.php');
+
 
 @$op = $_REQUEST['op'];
 $userController = new UserController();
@@ -12,9 +12,7 @@ switch ($op) {
         $password = $_POST['pass'];
         
         if($userController->login($username, $password)=='utente'){
-            include_once("../controllo/Utente_cont.php");
-            $role = new Utente_cont();  
-            $role->init();
+            header("Location:pre_utente.php");
         } elseif($userController->login($username, $password)=='admin'){
             header("Location:admin.php");
         }else {

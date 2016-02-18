@@ -19,6 +19,12 @@ class Admin_cont{
             case '0':    
                 include_once ('../view/autori.php');
                 break;
+            case '2':
+                include_once("../modello/Model.php");
+                $modello = new Model();  
+                $mail = $modello->mostra_mail();
+                include_once('../view/storico.php');
+                break;
             default :
                 include_once ('../view/admin.php');
             }

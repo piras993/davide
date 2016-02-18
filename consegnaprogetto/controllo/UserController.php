@@ -15,13 +15,14 @@ class UserController{
     function login ($username, $password){
         if($this->autenticazione($username, $password)=='utente'){
             session_start();
-            $user = new Umodel($username);
-            $_SESSION['user']=$user;
+            
+            
+            $_SESSION['user']='utente';
             return 'utente';
         } elseif($this->autenticazione($username, $password)=='admin'){
             session_start();
-            $user = new Umodel($username);
-            $_SESSION['user']=$user;
+            
+            $_SESSION['user']='admin';
             return 'admin';
             
         }else {

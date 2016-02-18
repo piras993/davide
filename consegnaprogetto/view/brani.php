@@ -1,3 +1,15 @@
+<?php
+
+
+session_start();
+if($_SESSION['user']!='admin'){
+    header("Location:login.php");
+    
+}
+else {
+    $_SESSION['user']='admin';
+}
+?>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">

@@ -1,13 +1,13 @@
 <?php
 
-require_once('../modello/Umodel.php');
+
 session_start();
-if(!isset($_SESSION['user'])){
+if($_SESSION['user']!='admin'){
     header("Location:login.php");
     
 }
 else {
-    $user = $_SESSION['user'];
+    $_SESSION['user']='admin';
 }
 ?>
 <html>
@@ -63,6 +63,7 @@ else {
                 <form action='../controllo/dirverter.php' method='post'>
                     <input type="radio" name="insert" value=0> Inserisci nuovo artista<br>
                     <input type="radio" name="insert" value=1> Inserisci nuovo brano<br>
+                    <input type="radio" name="insert" value=2> Storico ordini<br>
                     
                     <input id="log" type="submit" value="Invia">
                 </form>

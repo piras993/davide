@@ -1,13 +1,13 @@
 <?php
 
-require_once('../modello/Umodel.php');
 
-if(!isset($_SESSION['user'])){
+session_start();
+if($_SESSION['user']!='utente'){
     header("Location:login.php");
     
 }
 else {
-    $user = $_SESSION['user'];
+    $_SESSION['user']='utente';
 }
 ?>
 <html>
@@ -35,7 +35,7 @@ else {
             <div id="pagina">
             <div id='sidebar'>
                 <div id='alto'>
-                    <a href="initlogin.php?op=logout"><button id='log'>Logout</button></a><br/>
+                    <a href="javascript:history.go(-1)"><button id='log'>Torna indietro</button></a><br/>
                     
                     <div class='comune'>
                         <a  href="http://www.comune.bortigali.nu.it/">
@@ -64,6 +64,7 @@ else {
                     ?> <div  align="center">  <input id="gruppi" type="submit" value="<?php foreach ($row as $value){ echo $value; }; ?>" name="autore"><br></div>
                 <?php }
                 ?></form>
+                
                 
             </div>
             </div>

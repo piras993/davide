@@ -2,12 +2,12 @@
 
 
 session_start();
-if($_SESSION['user']!='admin'){
-    header("Location:login.php");
+if($_SESSION['user']!='utente'){
+    header("Location:../view/login.php");
     
 }
 else {
-    $_SESSION['user']='admin';
+    $_SESSION['user']='utente';
 }
 ?>
 <html>
@@ -21,17 +21,17 @@ else {
         <!--
 function Modulo() {
     
-    var nome = document.modulo.nome.value;
+    var mail = document.modulo.email.value;
     
     
-    if ((nome == "") || (nome == "undefined")) {
-        alert("Devi inserire il nome dell'artista.");
+    if ((mail == "") || (mail == "undefined")) {
+        alert("Devi inserire la mail.");
         document.modulo.nome.focus();
         return false;
     }
     
     else {
-        document.modulo.action = "../controllo/dirverter_autore.php";
+        document.modulo.action = "../controllo/ordine.php";
         document.modulo.submit();
     }
 }
@@ -55,9 +55,7 @@ function Modulo() {
             <div id="pagina">
             <div id='sidebar'>
                 <div id='alto'>
-                    <a  href="javascript:history.go(-1)"><button id='log'>
-                        Torna indietro
-                        </button></a><br/>
+                    <a href="javascript:history.go(-1)"><button id='log'>Torna indietro</button></a><br/>
                     
                     <div class='comune'>
                         <a  href="http://www.comune.bortigali.nu.it/">
@@ -80,11 +78,17 @@ function Modulo() {
             </div>
         
             <div id='content'>
-                <h5> Inserisci il nome del nuovo artista<br> <br></h5>
-                <div id="form" align="center">
-                <form method="post" name="modulo">
-                    <p>Nome</p> <input type="text" name="nome"> <br><br><br>
-                    <input id="log" type="button" value="INSERISCI" onClick="Modulo()">   
+                <div  align="center">
+                <form action = "../controllo/ordine.php" method="post" >
+                    <h5>Puoi ordinare uno dei nostri libri, verrai contattato tramite mail</h5>
+                    
+                  <?php while($row = $libro->fetch_row()){
+                      ?>   <select name="libro"><option><?php foreach ($row as $value){ echo $value; }; ?> </option></select><br>
+                <?php }
+                ?>  <p>Email</p>
+                    <input type="email" name="email"><br><br>
+                    <input id="log" type="submit" value="VAI">   
+                
                 </form>
                 </div>
             </div>

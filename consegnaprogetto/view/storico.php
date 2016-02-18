@@ -17,26 +17,6 @@ else {
         <meta name="keywords" content="Associazione Sas Enas">
         <meta name="description" content="Una pagina dell'associazione Sas'Enas di Bortigali">
         <link href="../stile/pagina.css" rel="stylesheet" type="text/css" media="screen">
-        <script>
-        <!--
-function Modulo() {
-    
-    var nome = document.modulo.nome.value;
-    
-    
-    if ((nome == "") || (nome == "undefined")) {
-        alert("Devi inserire il nome dell'artista.");
-        document.modulo.nome.focus();
-        return false;
-    }
-    
-    else {
-        document.modulo.action = "../controllo/dirverter_autore.php";
-        document.modulo.submit();
-    }
-}
-//-->
-</script>
     </head>
     <body>
         <div id='page'>
@@ -80,13 +60,16 @@ function Modulo() {
             </div>
         
             <div id='content'>
-                <h5> Inserisci il nome del nuovo artista<br> <br></h5>
-                <div id="form" align="center">
-                <form method="post" name="modulo">
-                    <p>Nome</p> <input type="text" name="nome"> <br><br><br>
-                    <input id="log" type="button" value="INSERISCI" onClick="Modulo()">   
-                </form>
-                </div>
+                <h5> Queste sono le mail di coloro che hanno fatto un ordine<br></h5>
+                
+                <?php if($mail->num_rows==0){
+                echo 'Nn ci sono ordini';
+                }else {while($row = $mail->fetch_row()){
+                
+                    ?> <div align="center"><p id="elenco"><?php foreach ($row as $value){ echo $value; }; ?> </p><br></div>
+                <?php }}
+                ?>
+                
             </div>
             </div>
             <div style="clear: both; width: 0px; height: 0px;"></div>

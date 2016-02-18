@@ -1,3 +1,15 @@
+<?php
+
+
+session_start();
+if($_SESSION['user']!='admin'){
+    header("Location:login.php");
+    
+}
+else {
+    $_SESSION['user']='admin';
+}
+?>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -23,8 +35,8 @@
             <div id="pagina">
             <div id='sidebar'>
                 <div id='alto'>
-                    <a  href="../index.php"><button id='log'>
-                        Logout e torma alla HOME
+                    <a  href="../view/admin.php"><button id='log'>
+                        Torna
                         </button></a><br/>
                     
                     <div class='comune'>
