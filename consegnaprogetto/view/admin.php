@@ -26,7 +26,7 @@ else {
                     
                     <div id="links">
                         <ul id="menu">
-                            <li><a href="../index.php">VAI ALLA HOME</a></li>
+                            <p>Sei loggato come admin</p>
                         </ul>
                     </div>
                 </div>

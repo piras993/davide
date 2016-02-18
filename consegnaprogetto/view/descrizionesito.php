@@ -60,16 +60,21 @@
                 <li>transazione nel salvataggio dell'ordine</li>
                 <li> Javascript</li>
                 Dalla barra superiore posso visualizzare varie pagine descrittive, nella pagina "paese" è presente uno slideshow 
-                di immagini effettuato tramite javascript.<br>
+                di immagini effettuato tramite javascript.<br><br>
                 Dalla home si può effettuare il login, per farlo come utente le credenziali sono:
                 <li>Username: utente</li>
                 <li>Password: password</li>
-                Apparirà un elenco di artisti (attinenti al genere di cui si occupa l'associazione) 
-                cliccando su di essi si possono visualizzare i brani.<br>
+                Si possono fare due scelte:<br> 
+                si può visualizzare un elenco di artisti (attinenti al genere di cui si occupa l'associazione) 
+                cliccando su di essi si possono visualizzare i brani; <br>
+                si può "bloccare" una produzione (nel database ne è presente solo una) inserendo la propria mail, questo comporterà
+                una diminuzione del numero di copie di quella produzione nel db e il salvataggio dell'operazione nella tabella bloccati(transazione).
+                <br><br>
                 Per fare il login come amministratore le credenziali sono:
                 <li>Username: admin</li>
                 <li>Password: password</li>
-                Qui si possono aggiungere brani o gruppi (artisti) che potranno poi essere visualizzati dall'utente.<br>
+                Qui si possono aggiungere brani o gruppi (artisti) che potranno poi essere visualizzati dall'utente e guardare lo storico delle 
+                produzione bloccate attraverso la tabella bloccati.<br>
                 
 
                 </p>

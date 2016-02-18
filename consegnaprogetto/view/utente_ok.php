@@ -26,7 +26,7 @@ else {
                     
                     <div id="links">
                         <ul id="menu">
-                            <li><a href="../index.php">VAI ALLA HOME</a></li>
+                            <p>Sei loggato come utente</p>
                         </ul>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ else {
             <div id='sidebar'>
                 <div id='alto'>
                     <a  href="../view/pre_utente.php"><button id='log'>
-                        Logout e torma alla HOME
+                        Torna
                         </button></a><br/>
                     
                     <div class='comune'>

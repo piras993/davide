@@ -46,7 +46,7 @@ function Modulo() {
                     
                     <div id="links">
                         <ul id="menu">
-                            <li><a href="../index.php">VAI ALLA HOME</a></li>
+                            <p>Sei loggato come utente</p>
                         </ul>
                     </div>
                 </div>
